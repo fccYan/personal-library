@@ -76,8 +76,9 @@ id="commentToAdd" name="comment" placeholder="New Comment"></form>`);
       url: '/api/books',
       type: 'delete',
       dataType: 'json',
-      data: $('#newBookForm').serialize(),
+      data: {},
       success: function(data) {
+        $('#display').html('');
         // update list
       },
     });

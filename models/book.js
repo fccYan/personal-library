@@ -7,7 +7,7 @@ module.exports = function(mongoose) {
     },
     comments: {
       type: [String],
-      required: true,
+      default: [],
     },
   }, {
     versionKey: false, // You should be aware of the outcome after set to false
